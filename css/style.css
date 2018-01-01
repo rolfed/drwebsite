@@ -19,7 +19,7 @@ body {
     margin: 0;
     font-family: 'Slabo 27px', serif;
     font-size: 16px;
-    font-color: #4c5059;
+    color: #4c5059;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,6 +33,12 @@ h1, h2, h3, h4, h5, h6, svg {
     color: #bf5a5a;
 }
 
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
 p {
     font-family: 'Slabo 27px', serif;
     color: #4c5059;
@@ -44,13 +50,13 @@ p {
     background-color: #f2f2f2;
 }
 
-nav.main-navigation,
-span.main-navigation-logo,
-div.main-navigation-dropdown,
-a.main-navigation-controls,
-div.main-navigation-items {
+.main-navigation,
+.main-navigation-logo,
+.main-navigation-dropdown,
+.main-navigation-controls,
+.main-navigation-items {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
 }
 
@@ -58,6 +64,7 @@ nav.main-navigation,
 main,
 footer {
     padding: 1.793rem;
+    align-items: stretch;
 }
 
 nav.main-navigation {
@@ -83,7 +90,8 @@ a.main-navigation-dropdown,
 }
 
 .main-navigation-dropdown {
-    flex: 2.5 100%;
+    flex: 3;
+    align-items: stretch;
 }
 
 
@@ -91,12 +99,17 @@ a.main-navigation-dropdown,
 .main-navigation-items a {
     font-size:    1.383em;
     background-color: #bf5a5a;
-    margin-top: 0.025rem;
-    margin-bottom: 0.25rem;
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    flex: 1 100%;
+    margin-top: 0.115rem;
+    margin-bottom: 0.115rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    flex: 1;
     color: #ffffff;
     border: 1px solid #bf5a5a;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.115rem;
+    width: 100%;
 }
 
 .main-navigation-items a:hover {
@@ -104,6 +117,146 @@ a.main-navigation-dropdown,
     background-color: #f2f2f2;
     border: 1px solid #bf5a5a;
 }
+
+.main-navigation-social-media {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.main-navigation-social-media a {
+    flex: 1;
+    text-align: center;
+}
+
+.main-navigation-social-media a svg:hover {
+    color: #4c5059;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+section > :first-child {
+    border-bottom: solid 0.115px #4c5059;
+    margin-bottom: 1.793rem;
+}
+
+.about-social-media {
+    display: none;
+}
+
+.resume-columns {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.work-items {
+    display: grid;
+    grid-template-columns: 98%;
+    grid-gap: 2%;
+}
+
+.work-item {
+    border: solid 0.25px #4c5059;
+    padding: 1.067rem;
+}
+
+.work-item img {
+    width: 100%;
+}
+
+
+.resume-skills-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-skills div span svg {
+    margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 500px) {
+    .work-items {
+        grid-template-columns: 49% 49%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h2 {
+        text-align: left;
+    }
+
+    .main-navigation,
+    .main-navigation-items,
+    .main-navigation-logo,
+    .main-navigation-social-media {
+        flex-direction: row;
+    }
+
+    nav.main-navigation {
+        min-height: 75px;
+        align-items: flex-start;
+    }
+
+    .main-navigation-logo {
+        flex: 1.75;
+        align-items: flex-start;
+        font-size: 1.067rem;
+    }
+
+    .main-navigation-logo svg {
+        margin-right: 0.25rem;
+    }
+
+    .main-naviagtion-dropdown {
+        flex: 3;
+        align-items: flex-start;
+    }
+    .main-navigation-controls {
+        display: none;
+    }
+
+    .main-navigation-social-media {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 75% 23%;
+        grid-column-gap: 2%;
+    }
+
+    .about-social-media {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 100%;
+        align-items: flex-start;
+    }
+
+    .work-items {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 2%;
+    }
+
+    .resume {
+        color: #f2f2f2 !important;
+    }
+
+    .resume-columns {
+        grid-template-columns: 22.5% 72.5%;
+        grid-column-gap: 5%;
+    }
+
+    .resume-skills {
+        background-color: #4c5059;
+        padding-right: 1.067rem;
+        padding-left: 1.067rem;
+    }
+
+}
+
 
 
 

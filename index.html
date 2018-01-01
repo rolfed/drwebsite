@@ -7,6 +7,9 @@
     <script src="js/index.js" type="text/javascript"></script>
     <script defer src="js/fa-light.min.js" type="text/javascript"></script>
     <script defer src="js/fa-brands.min.js" type="text/javascript"></script>
+    <script>
+        FontAwesomeConfig = { searchPseudoElements: true };
+    </script>
     <script defer src="js/fontawesome.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -29,193 +32,216 @@
                 <a href="#contact">Contact</a>
             </div>
             <div class="main-navigation-social-media">
-                <a href=""><i class="fab fa-github-square"></i></a>
-                <a href=""><i class="fab fa-linkedin"></i></a>
-                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/rolfed"><i class="fab fa-github-square fa-2x" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/dannielrolfe/" target="_blank" ><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href=""><i class="fab fa-facebook fa-2x" target="_blank"></i></a>
             </div>
         </div>
 
     </nav>
     <main>
-        <section class="about" id="about">
-            <h2>About</h2>
-            <h2>Hi. I'm Danniel S. Rolfe</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
-                viverra ante.
-            </p>
-            <p>
-                Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat neque.
-                Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
-                Nunc eget sollicitudin ex. Vestibulum eros magna, mattis sed faucibus id, maximus ac tellus.
-            </p>
-            <p>
-                Mauris placerat libero at quam feugiat porttitor. In ante massa, varius ut orci non, maximus consequat lorem.
-                Integer ultrices dui eu lorem accumsan, non tincidunt arcu pretium.
-            </p>
-        </section>
-
-        <section class="work" id="work">
-            <h2>Work</h2>
-            <article class="work-item">
-                <h3>The Standard</h3>
+        <div class="main-column-75">
+            <section class="about" id="about">
+                <h2>About</h2>
+                <p>Hi. I'm Danniel S. Rolfe</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
-                    viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
-                    neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                    viverra ante.
                 </p>
-            </article>
-
-            <article class="work-item">
-                <h3>Sitka Center for Art and Ecology</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
-                    viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
-                    neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                <p>
+                    Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat neque.
+                    Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                    Nunc eget sollicitudin ex. Vestibulum eros magna, mattis sed faucibus id, maximus ac tellus.
                 </p>
-            </article>
-
-            <article class="work-item">
-                <h3>17Hats</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
-                    viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
-                    neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                <p>
+                    Mauris placerat libero at quam feugiat porttitor. In ante massa, varius ut orci non, maximus consequat lorem.
+                    Integer ultrices dui eu lorem accumsan, non tincidunt arcu pretium.
                 </p>
-            </article>
+            </section>
 
-            <article class="work-item">
-                <h3>Manifest</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
-                    viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
-                    neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
-                </p>
-            </article>
+            <section class="work" id="work">
+                <h2>Work</h2>
+                <div class="work-items">
+                    <article class="work-item">
+                        <img class="work-img" src="http://via.placeholder.com/350x350">
+                        <h3>The Standard</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
+                            viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
+                            neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                        </p>
+                        <a href="">Life Project</a>
+                    </article>
 
-            <article class="work-item">
-                <h3>Oregon Catholic Press</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
-                    viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
-                    neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
-                </p>
-            </article>
+                    <article class="work-item">
+                        <img class="work-img" src="http://via.placeholder.com/350x350">
+                        <h3>Sitka Center for Art and Ecology</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
+                            viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
+                            neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                        </p>
+                        <a href="">Life Project</a>
+                    </article>
 
-            <article class="work-item">
-                <h3>Oregon Catholic Press</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
-                    viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
-                    neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
-                </p>
-            </article>
-        </section>
+                    <article class="work-item">
+                        <img class="work-img" src="http://via.placeholder.com/350x350">
+                        <h3>17Hats</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
+                            viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
+                            neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                        </p>
+                        <a href="">Life Project</a>
+                    </article>
 
-        <section class="resume" id="resume">
-            <h2>Resume</h2>
-            <div class="resume-skills">
-                <div class="resume-skills-frameworks">
-                    <h4>Frameworks</h4>
-                    <span>Angular 5</span>
-                    <span>Angular.js</span>
-                    <span>React</span>
-                    <span>Redux</span>
-                    <span>Node.js</span>
-                    <span>Bootstrap</span>
-                    <span>Karma</span>
-                    <span>Jasmin</span>
-                    <span>MongoDB</span>
-                    <span>MySql</span>
+                    <article class="work-item">
+                        <img class="work-img" src="http://via.placeholder.com/350x350">
+                        <h3>Manifest</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
+                            viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
+                            neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                        </p>
+                        <a href="">Life Project</a>
+                    </article>
+
+                    <article class="work-item">
+                        <img class="work-img" src="http://via.placeholder.com/350x350">
+                        <h3>Oregon Catholic Press</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
+                            viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
+                            neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                        </p>
+                        <a href="">Life Project</a>
+                    </article>
+
+                    <article class="work-item">
+                        <img class="work-img" src="http://via.placeholder.com/350x350">
+                        <h3>Oregon Catholic Press</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim dignissim, commodo ante eget,
+                            viverra ante. Pellentesque eleifend massa risus, vel commodo orci efficitur in. Aliquam dapibus feugiat
+                            neque. Cras enim dolor, congue quis ligula in, pellentesque convallis erat. Nullam vitae turpis diam.
+                        </p>
+                        <a href="">Life Project</a>
+                    </article>
                 </div>
+            </section>
 
-                <div class="resume-skills-languages">
-                    <h4>Languages</h4>
-                    <span>Javascript</span>
-                    <span>Typescript</span>
-                    <span>HTML5</span>
-                    <span>CSS</span>
-                    <span>Sass</span>
-                    <span>Java</span>
-                    <span>Sql</span>
+            <section class="resume" id="resume">
+                <h2>Resume</h2>
+                <div class="resume-columns">
+                    <div class="resume-skills">
+                        <div class="resume-skills-items">
+                            <h4>Frameworks</h4>
+                            <span><i class="fal fa-caret-right"></i>Angular 5</span>
+                            <span><i class="fal fa-caret-right"></i>Angular.js</span>
+                            <span><i class="fal fa-caret-right"></i>React</span>
+                            <span><i class="fal fa-caret-right"></i>Redux</span>
+                            <span><i class="fal fa-caret-right"></i>Node.js</span>
+                            <span><i class="fal fa-caret-right"></i>Bootstrap</span>
+                            <span><i class="fal fa-caret-right"></i>Karma</span>
+                            <span><i class="fal fa-caret-right"></i>Jasmin</span>
+                            <span><i class="fal fa-caret-right"></i>MongoDB</span>
+                            <span><i class="fal fa-caret-right"></i>MySql</span>
+                        </div>
+
+                        <div class="resume-skills-items">
+                            <h4>Languages</h4>
+                            <span><i class="fal fa-caret-right"></i>Javascript</span>
+                            <span><i class="fal fa-caret-right"></i>Typescript</span>
+                            <span><i class="fal fa-caret-right"></i>HTML5</span>
+                            <span><i class="fal fa-caret-right"></i>CSS</span>
+                            <span><i class="fal fa-caret-right"></i>Sass</span>
+                            <span><i class="fal fa-caret-right"></i>Java</span>
+                            <span><i class="fal fa-caret-right"></i>Sql</span>
+                        </div>
+
+                        <div class="resume-skills-items">
+                            <h4>DevOps</h4>
+                            <span><i class="fal fa-caret-right"></i>Linux</span>
+                            <span><i class="fal fa-caret-right"></i>Nginx</span>
+                            <span><i class="fal fa-caret-right"></i>Docker</span>
+                            <span><i class="fal fa-caret-right"></i>AWS</span>
+                        </div>
+
+                        <div class="resume-skills-items">
+                            <h4>Tools</h4>
+                            <span><i class="fal fa-caret-right"></i>IntelliJ</span>
+                            <span><i class="fal fa-caret-right"></i>Vim</span>
+                            <span><i class="fal fa-caret-right"></i>Jira</span>
+                            <span><i class="fal fa-caret-right"></i>Axure</span>
+                            <span><i class="fal fa-caret-right"></i>Webpack</span>
+                            <span><i class="fal fa-caret-right"></i>Gulp</span>
+                        </div>
+                    </div>
+
+                    <div class="resume-experience">
+                        <article class="resume-experience-item">
+                            <h4>Full Stack Developer</h4>
+                            <p>The Standard</p>
+                            <p>August 2017 - current</p>
+                            <p>At The Standard, I was responsible for moving the company off of outdated legacy web technology onto
+                                open-source stack, working on the frontend, build tools, and backend. The project that I contributed to
+                                included consuming REST APIs, implementing new features and tests, and collaborting and educating
+                                stakeholders.
+                            </p>
+                        </article>
+
+                        <article class="resume-experience-item">
+                            <h4>Frontend Developer</h4>
+                            <p>17Hats</p>
+                            <p>March 2017 - June 2017</p>
+                            <p>At The Standard, I was responsible for moving the company off of outdated legacy web technology onto
+                                open-source stack, working on the frontend, build tools, and backend. The project that I contributed to
+                                included consuming REST APIs, implementing new features and tests, and collaborting and educating
+                                stakeholders.
+                            </p>
+                        </article>
+
+                        <article class="resume-experience-item">
+                            <h4>Full Stack Developer</h4>
+                            <p>Manifest</p>
+                            <p>Sep 2016 - Feb 2017</p>
+                            <p>At The Standard, I was responsible for moving the company off of outdated legacy web technology onto
+                                open-source stack, working on the frontend, build tools, and backend. The project that I contributed to
+                                included consuming REST APIs, implementing new features and tests, and collaborting and educating
+                                stakeholders.
+                            </p>
+                        </article>
+
+                        <article class="resume-experience-item">
+                            <h4>UX Developer</h4>
+                            <p>Oregon Catholic Press</p>
+                            <p>May 2016 - August 2017</p>
+                            <p>At The Standard, I was responsible for moving the company off of outdated legacy web technology onto
+                                open-source stack, working on the frontend, build tools, and backend. The project that I contributed to
+                                included consuming REST APIs, implementing new features and tests, and collaborting and educating
+                                stakeholders.
+                            </p>
+                        </article>
+                    </div>
+
                 </div>
-
-                <div class="resume-skills-devops">
-                    <h4>DevOps</h4>
-                    <span>Linux</span>
-                    <span>Nginx</span>
-                    <span>Docker</span>
-                    <span>AWS</span>
+            </section>
+        </div>
+        <div class="main-column-25">
+            <section class="contact" id="contact">
+                <h2>Contact</h2>
+                <div class="about-social-media">
+                    <a href="https://github.com/rolfed"><i class="fab fa-github-square fa-2x" target="_blank"></i></a>
+                    <a href="https://www.linkedin.com/in/dannielrolfe/" target="_blank" ><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href=""><i class="fab fa-facebook fa-2x" target="_blank"></i></a>
                 </div>
+                <form>
+                    <label>Subject</label>
+                    <input type="text">
 
-                <div class="resume-skills-tools">
-                    <h4>Tools</h4>
-                    <span>IntelliJ</span>
-                    <span>Vim</span>
-                    <span>Jira</span>
-                    <span>Axure</span>
-                    <span>Webpack</span>
-                    <span>Gulp</span>
-                </div>
-            </div>
+                    <label>Email</label>
+                    <input type="email">
 
-            <div class="resume-experience">
-                <article class="resume-experience-item">
-                    <h4>Full Stack Developer</h4>
-                    <p>The Standard</p>
-                    <p>August 2017 - current</p>
-                    <p>At The Standard, I was responsible for moving the company off of outdated legacy web technology onto
-                        open-source stack, working on the frontend, build tools, and backend. The project that I contributed to
-                        included consuming REST APIs, implementing new features and tests, and collaborting and educating
-                        stakeholders.
-                    </p>
-                </article>
+                    <label>Message</label>
+                    <textarea></textarea>
 
-                <article class="resume-experience-item">
-                    <h4>Frontend Developer</h4>
-                    <p>17Hats</p>
-                    <p>March 2017 - June 2017</p>
-                    <p>At The Standard, I was responsible for moving the company off of outdated legacy web technology onto
-                        open-source stack, working on the frontend, build tools, and backend. The project that I contributed to
-                        included consuming REST APIs, implementing new features and tests, and collaborting and educating
-                        stakeholders.
-                    </p>
-                </article>
-
-                <article class="resume-experience-item">
-                    <h4>Full Stack Developer</h4>
-                    <p>Manifest</p>
-                    <p>Sep 2016 - Feb 2017</p>
-                    <p>At The Standard, I was responsible for moving the company off of outdated legacy web technology onto
-                        open-source stack, working on the frontend, build tools, and backend. The project that I contributed to
-                        included consuming REST APIs, implementing new features and tests, and collaborting and educating
-                        stakeholders.
-                    </p>
-                </article>
-
-                <article class="resume-experience-item">
-                    <h4>UX Developer</h4>
-                    <p>Oregon Catholic Press</p>
-                    <p>May 2016 - August 2017</p>
-                    <p>At The Standard, I was responsible for moving the company off of outdated legacy web technology onto
-                        open-source stack, working on the frontend, build tools, and backend. The project that I contributed to
-                        included consuming REST APIs, implementing new features and tests, and collaborting and educating
-                        stakeholders.
-                    </p>
-                </article>
-            </div>
-
-        </section>
-
-        <section class="contact" id="contact">
-            <h2>Contact</h2>
-            <form>
-                <label>Subject</label>
-                <input type="text">
-
-                <label>Email</label>
-                <input type="email">
-
-                <label>Message</label>
-                <textarea></textarea>
-
-                <button>Send</button>
-            </form>
-        </section>
-
+                    <button>Send</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <a href=""><i class="fal fa-github-square"></i></a>
