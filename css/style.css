@@ -257,6 +257,11 @@ section > :first-child {
 }
 
 @media screen and (min-width: 800px) {
+    .hidden {
+        display: block;
+
+    }
+
     h2 {
         text-align: left;
     }
@@ -279,14 +284,16 @@ section > :first-child {
         font-size: 1.067rem;
     }
 
+    .main-navigation-dropdown {
+        flex: 3;
+        align-items: stretch;
+        margin: 0;
+    }
+
     .main-navigation-logo svg {
         margin-right: 0.25rem;
     }
 
-    .main-naviagtion-dropdown {
-        flex: 3;
-        align-items: flex-start;
-    }
     .main-navigation-button {
         display: none;
     }
