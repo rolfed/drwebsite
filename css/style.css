@@ -44,6 +44,21 @@ p {
     color: #4c5059;
 }
 
+a {
+    text-decoration: none;
+    color: #bf5a5a;
+    font-family: 'Slabo 27px', serif;
+    text-transform: uppercase;
+}
+
+a:hover,
+a:hover > svg {
+    color: #4c5059;
+}
+
+a > svg {
+    margin-right: 1.067rem;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -91,6 +106,7 @@ a.main-navigation-dropdown,
 
 button.main-navigation-button {
     border: 0;
+    background: rgba(0,0,0,0);
     font-family: 'Slabo 27px', serif;
     font-size: 1.067rem;
     text-transform: uppercase;
@@ -166,6 +182,26 @@ section > :first-child {
     grid-template-columns: 100%;
 }
 
+.resume-experience-title {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.resume-experience-title h4:after,
+.resume-experience-title p:first-of-type:after {
+    content: '|';
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: #bf5a5a;
+}
+
+.resume-experience-title p {
+    color: #4c5059;
+}
+
 .work-items {
     display: grid;
     grid-template-columns: 1fr;
@@ -189,6 +225,10 @@ section > :first-child {
 .resume-skills-items {
     display: flex;
     flex-direction: column;
+}
+
+.resume-experience-item ul li {
+    color: #4c5059;
 }
 
 .resume-skills div span svg {
@@ -256,7 +296,7 @@ section > :first-child {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
     .hidden {
         display: block;
 
@@ -330,7 +370,7 @@ section > :first-child {
     }
 
     .resume-columns {
-        grid-template-columns: 22.5% 72.5%;
+        grid-template-columns: 1.25fr 3fr;
         grid-column-gap: 5%;
     }
 
@@ -338,6 +378,7 @@ section > :first-child {
         background-color: #4c5059;
         padding-right: 1.067rem;
         padding-left: 1.067rem;
+        padding-bottom: 1.75rem;
         grid-template-columns: 1fr;
     }
 
